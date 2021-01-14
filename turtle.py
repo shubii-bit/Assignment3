@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jan 15 02:15:42 2021
-
-@author: hp
-"""
 
 import turtle
 t=turtle.Turtle()
