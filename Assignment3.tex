@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{pgfplots}
+\usepackage{tikz}
+
+\begin{document}
+\title{ASSIGNMENT 3}
+\author{Shubham Shrivastava}
+\date{\today}
+\maketitle
+\section*{Question}
+Draw a triangle with $a = 6$, $c = 5$ and $∠B = 60$.
+
+\section*{Solution}
+Given,
+$\\$
+$BC = 6cm$\\
+$AB = 5cm$\\
+$\\$
+Steps of construction:\\
+$\\$
+1.Draw the line segment $BC$ (here we take the longest side).\\
+$\\$
+2.Using protractor, at $B$, draw a line BX making an angle of 60° with $BC$.\\
+$\\$
+3.With $B$ as centre, draw an arc of radius 5 cm to cut the line $(BX)$ at $A$.\\
+$\\$
+4.Join $AC$, This is the required triangle.\\
+$\\$
+Now, using latex tikz below is the required triangle:\\
+\begin{center}
+\begin{tikzpicture}
+\draw(0,0)--(6,0);
+\draw(0,0)--(60:5)--(6,0);
+\node at(60:5)[above left]{$A$};
+\node at(0,0)[below left]{$B$};
+\node at(6,0)[below right]{$C$}; 
+\end{tikzpicture}
+\end{center}
+
+\end{document}
